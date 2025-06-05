@@ -22,9 +22,11 @@ public class Nivel
     {
         bool aux = true;
 
-        if(nivelesCompletados > numNivel)
+        if(nivelesCompletados == (numNivel -1))
         {
             aux = false;
+        }else{
+            nivelesCompletados++;
         }
         return aux;
     }

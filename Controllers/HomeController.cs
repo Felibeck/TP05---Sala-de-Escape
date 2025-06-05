@@ -121,4 +121,8 @@ public class HomeController : Controller
             return View("Ganar");
         }else return View();
     }
+    public IActionResult Ganar()
+    {
+        return View();
+    }
 }
