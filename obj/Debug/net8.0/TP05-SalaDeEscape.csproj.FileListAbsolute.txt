@@ -1,0 +1,9 @@
+C:\Users\49255481\TP05---Sala-de-Escape\obj\Debug\net8.0\TP05-SalaDeEscape.csproj.AssemblyReference.cache
+C:\Users\49255481\TP05---Sala-de-Escape\obj\Debug\net8.0\TP05-SalaDeEscape.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\49255481\TP05---Sala-de-Escape\obj\Debug\net8.0\TP05-SalaDeEscape.AssemblyInfoInputs.cache
+C:\Users\49255481\TP05---Sala-de-Escape\obj\Debug\net8.0\TP05-SalaDeEscape.AssemblyInfo.cs
+C:\Users\49255481\TP05---Sala-de-Escape\obj\Debug\net8.0\TP05-SalaDeEscape.csproj.CoreCompileInputs.cache
+C:\Users\49255481\TP05---Sala-de-Escape\obj\Debug\net8.0\TP05-SalaDeEscape.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\49255481\TP05---Sala-de-Escape\obj\Debug\net8.0\TP05-SalaDeEscape.RazorAssemblyInfo.cache
+C:\Users\49255481\TP05---Sala-de-Escape\obj\Debug\net8.0\TP05-SalaDeEscape.RazorAssemblyInfo.cs
+C:\Users\49255481\TP05---Sala-de-Escape\obj\Debug\net8.0\TP05-SalaDeEscape.sourcelink.json

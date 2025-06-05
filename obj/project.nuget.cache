@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "j37CHPLnmS9wjibCkj2HJVBKTCF604b+tZhi5J1GgjOVrmGT1o9YLBK0ww0XCSZcHUqw84WYJUZEdGT6xQC/lw==",
+  "dgSpecHash": "ZXOPA3fePQjrb7yBpobT8qDNPQZR5yMh5YTPMU08/mTWkhb7P5KzlLD75M2YGqH10z7LjgNIzxNlG9tkZaFG1w==",
   "success": true,
-  "projectFilePath": "Z:\\2025\\Programacion\\TP05-SalaDeEscape\\TP05-SalaDeEscape.csproj",
+  "projectFilePath": "C:\\Users\\49255481\\TP05---Sala-de-Escape\\TP05-SalaDeEscape.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\49255481\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\2.3.0\\microsoft.aspnetcore.cryptography.internal.2.3.0.nupkg.sha512",
     "C:\\Users\\49255481\\.nuget\\packages\\microsoft.aspnetcore.dataprotection\\2.3.0\\microsoft.aspnetcore.dataprotection.2.3.0.nupkg.sha512",

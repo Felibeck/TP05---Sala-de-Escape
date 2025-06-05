@@ -18,7 +18,7 @@ public class Nivel
         this.pistas = new string[5];
     }
 
-    public bool verificarAvance()
+    public bool verificarAvance(int nivel)
     {
         bool aux = true;
 
