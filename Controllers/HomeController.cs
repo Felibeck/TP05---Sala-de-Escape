@@ -24,7 +24,7 @@ public class HomeController : Controller
         niveles.InicializarNivel1();
         HttpContext.Session.SetString("niveles", Objeto.ObjectToString(niveles));
         ViewBag.pista = niveles.pistas[0];
-        return View("Nivel1");
+        return View();
     }
 
 
@@ -40,7 +40,7 @@ public class HomeController : Controller
 
     public IActionResult Nivel2(string rta)
     {
-        Nivel niveles = Objeto.StringToObject<Nivel>(HttpsContext.Session.GetString("niveles"));
+        Nivel niveles = Objeto.StringToObject<Nivel>(HttpContext.Session.GetString("niveles"));
         niveles.InicializarNivel2();
         if(!niveles.verificarAvance(2))
         {
@@ -60,7 +60,7 @@ public class HomeController : Controller
     {
         Nivel niveles = Objeto.StringToObject<Nivel>(HttpContext.Session.GetString("niveles"));
         niveles.InicializarNivel3();
-        if(!niveles.verificarAvance())
+        if(!niveles.verificarAvance(3))
         {
             return View("Jugar");
         }
@@ -78,7 +78,7 @@ public class HomeController : Controller
     {
         Nivel niveles = Objeto.StringToObject<Nivel>(HttpContext.Session.GetString("niveles"));
         niveles.InicializarNivel4();
-        if(!niveles.verificarAvance())
+        if(!niveles.verificarAvance(4))
         {
             return View("Jugar");
         }
@@ -108,7 +108,7 @@ public class HomeController : Controller
     {
         Nivel niveles = Objeto.StringToObject<Nivel>(HttpContext.Session.GetString("niveles"));
         niveles.InicializarNivel5();
-        if(!niveles.verificarAvance())
+        if(!niveles.verificarAvance(5))
         {
             return View("Jugar");
         }
@@ -122,6 +122,15 @@ public class HomeController : Controller
         }else return View();
     }
     public IActionResult Ganar()
+    {
+        return View();
+    }
+
+    public IActionResult Tutorial()
+    {
+        return View();
+    }
+    public IActionResult Creditos()
     {
         return View();
     }

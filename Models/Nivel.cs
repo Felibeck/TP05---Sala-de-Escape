@@ -70,7 +70,7 @@ public class Nivel
     public bool comprobarRespuesta(string respuesta, int nivel)
     {
         bool aux = false;
-        if(respuesta == respuesta[nivel-1])
+        if(respuesta == respuestas[nivel-1])
         {
             aux = true;
         }

@@ -7,9 +7,9 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/TP05_SalaDeEscape.csproj",
+                "${workspaceFolder}/TP05-SalaDeEscape.csproj",
                 "/property:GenerateFullPaths=true",
-                "/consoleloggerparameters:NoSummary;ForceNoAlign"
+                "/consoleloggerparameters:NoSummary"
             ],
             "problemMatcher": "$msCompile"
         },
@@ -19,9 +19,9 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/TP05_SalaDeEscape.csproj",
+                "${workspaceFolder}/TP05-SalaDeEscape.csproj",
                 "/property:GenerateFullPaths=true",
-                "/consoleloggerparameters:NoSummary;ForceNoAlign"
+                "/consoleloggerparameters:NoSummary"
             ],
             "problemMatcher": "$msCompile"
         },
@@ -33,7 +33,7 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/TP05_SalaDeEscape.csproj"
+                "${workspaceFolder}/TP05-SalaDeEscape.csproj"
             ],
             "problemMatcher": "$msCompile"
         }
