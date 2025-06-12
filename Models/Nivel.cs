@@ -9,26 +9,10 @@ public class Nivel
 
     [JsonProperty]
     public string[] pistas {get; private set;}
-
-    [JsonProperty]
-    public int nivelesCompletados {get; private set;}
     public Nivel()
     {
         this.respuestas = new string[5];
         this.pistas = new string[5];
-    }
-
-    public bool verificarAvance(int nivel)
-    {
-        bool aux = true;
-
-        if(nivelesCompletados == (numNivel -1))
-        {
-            aux = false;
-        }else{
-            nivelesCompletados++;
-        }
-        return aux;
     }
     public void InicializarNivel1()
     {
@@ -40,7 +24,7 @@ public class Nivel
 
     public void InicializarNivel2()
     {
-        respuestas[1] = "Ceriana";
+        respuestas[1] = "CERIANA";
         numNivel = 2;
         pistas[1] = "4 palabras: Barba, Lentes, Mate y HTML";
     }

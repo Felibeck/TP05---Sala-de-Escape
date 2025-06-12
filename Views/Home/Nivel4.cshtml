@@ -1,0 +1,39 @@
+<main class="main-nivel4">
+
+    <h2>¡GitHub explotando!</h2>
+
+
+    <div>
+        <h3>Historia breve:</h3>
+        <p> Revisas tu repositorio y descubres que has subido carpetas gigantes con binarios: ¡toda tu carpeta “node_modules”, “*.exe” y hasta tus secretos de Discord! El conserje del colegio amenaza con revisar tu GitHub si no enmiendas esto.</p>
+    </div>
+
+
+    <a href="#" onclick="MostrarPista()"><p>Ver Pista</p></a>
+    <div id="PistaOculta"><p>@ViewBag.pista</p></div>
+
+    <form action="Nivel4" method="POST">
+    
+        <p>
+        <input type="checkbox" name="rta" value="Fotos_Privadas.png"> Fotos_Privadas.png
+        <input type="checkbox" name="rta" value="Contraseña_Gmail.txt"> Contraseña_Gmail.txt
+        <input type="checkbox" name="rta" value="estChatGPTPrompts.txt"> estChatGPTPrompts.txt
+        <input type="checkbox" name="rta">
+        </p>
+
+        <!-- falta agregar las opciones correctas e incorrectas -->
+        
+        <input type="submit">
+
+    </form>
+    
+
+
+</main>
+
+<script>
+    function MostrarPista()
+    {
+        document.getElementById('PistaOculta').style.display='Block';
+    }
+</script>

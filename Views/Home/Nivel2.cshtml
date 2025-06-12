@@ -1,3 +1,31 @@
-<main>
-    <h2>Hla</h2>
+<main class="main-nivel2">
+
+    <h2>¿Quién me responde la duda?</h2>
+
+
+    <div>
+        <h3>Historia breve:</h3>
+        <p>Ya conectado, envías un mail al profe para pedir ayuda y, misteriosamente, recibes otro post-it: “Dudas, preguntas, consultas?” Sin remitente. ¿Quién será?</p>
+    </div>
+
+
+    <a href="#" onclick="MostrarPista()"><p>Ver Pista</p></a>
+    <div id="PistaOculta"><p>@ViewBag.pista</p></div>
+
+
+    <h4>Respuesta:</h4>
+    <form action="Nivel2" method=POST>
+        <input type="password" name="rta">
+        <input type="submit">
+    </form>
+
+    <img src="/Imagenes/campusOrt-Nivel2.png" alt="nivel2CampusOrt.png">
+
 </main>
+
+<script>
+    function MostrarPista()
+    {
+        document.getElementById('PistaOculta').style.display='Block';
+    }
+</script>

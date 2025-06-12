@@ -1,0 +1,26 @@
+<main class="main-nivel3">
+
+    <h2>¡Computadora en apagón!</h2>
+
+
+    <div>
+        <h3>Historia breve:</h3>
+        <p> De pronto, tu compu se apaga en medio de la edición del TP. No hay corriente, no hay disco duro que aguante. ¿Qué cable o dispositivo debes reconectar para revivirla?</p>
+    </div>
+
+
+    <a href="#" onclick="MostrarPista()"><p>Ver Pista</p></a>
+    <div id="PistaOculta"><p>@ViewBag.pista</p></div>
+
+
+    
+
+
+</main>
+
+<script>
+    function MostrarPista()
+    {
+        document.getElementById('PistaOculta').style.display='Block';
+    }
+</script>

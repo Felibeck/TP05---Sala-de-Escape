@@ -5,8 +5,16 @@
       "PackagePath": "staticwebassets\\.gitignore"
     },
     {
+      "Id": "C:\\Users\\49255481\\TP05---Sala-de-Escape\\wwwroot\\Imagenes\\campusOrt-Nivel2.png",
+      "PackagePath": "staticwebassets\\Imagenes\\campusOrt-Nivel2.png"
+    },
+    {
       "Id": "C:\\Users\\49255481\\TP05---Sala-de-Escape\\wwwroot\\Imagenes\\logoKeycaps.png",
       "PackagePath": "staticwebassets\\Imagenes\\logoKeycaps.png"
+    },
+    {
+      "Id": "C:\\Users\\49255481\\TP05---Sala-de-Escape\\wwwroot\\Imagenes\\nivel1-foto-espejo.png",
+      "PackagePath": "staticwebassets\\Imagenes\\nivel1-foto-espejo.png"
     },
     {
       "Id": "C:\\Users\\49255481\\TP05---Sala-de-Escape\\wwwroot\\css\\site.css",

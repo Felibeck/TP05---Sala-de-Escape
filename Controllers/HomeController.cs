@@ -42,14 +42,10 @@ public class HomeController : Controller
     {
         Nivel niveles = Objeto.StringToObject<Nivel>(HttpContext.Session.GetString("niveles"));
         niveles.InicializarNivel2();
-        if(!niveles.verificarAvance(2))
-        {
-            return View("Jugar");
-        }
         HttpContext.Session.SetString("niveles", Objeto.ObjectToString(niveles));
         ViewBag.pista = niveles.pistas[1];
 
-        if(niveles.comprobarRespuesta(rta, niveles.numNivel))
+        if(niveles.comprobarRespuesta(rta.ToUpper(), niveles.numNivel))
         {
             HttpContext.Session.SetString("niveles", Objeto.ObjectToString(niveles));
             return View("Nivel3");
@@ -60,10 +56,6 @@ public class HomeController : Controller
     {
         Nivel niveles = Objeto.StringToObject<Nivel>(HttpContext.Session.GetString("niveles"));
         niveles.InicializarNivel3();
-        if(!niveles.verificarAvance(3))
-        {
-            return View("Jugar");
-        }
         HttpContext.Session.SetString("niveles", Objeto.ObjectToString(niveles));
         ViewBag.pista = niveles.pistas[2];
 
@@ -78,10 +70,6 @@ public class HomeController : Controller
     {
         Nivel niveles = Objeto.StringToObject<Nivel>(HttpContext.Session.GetString("niveles"));
         niveles.InicializarNivel4();
-        if(!niveles.verificarAvance(4))
-        {
-            return View("Jugar");
-        }
         HttpContext.Session.SetString("niveles", Objeto.ObjectToString(niveles));
         ViewBag.pista = niveles.pistas[3];
 
@@ -108,10 +96,6 @@ public class HomeController : Controller
     {
         Nivel niveles = Objeto.StringToObject<Nivel>(HttpContext.Session.GetString("niveles"));
         niveles.InicializarNivel5();
-        if(!niveles.verificarAvance(5))
-        {
-            return View("Jugar");
-        }
         HttpContext.Session.SetString("niveles", Objeto.ObjectToString(niveles));
         ViewBag.pista = niveles.pistas[4];
 
