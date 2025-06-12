@@ -4,6 +4,10 @@
   padding:0;
 }
 
+header{
+  border-bottom: 1px;
+}
+
 header h5{
   text-align: center;
   text-decoration: underline;
@@ -147,3 +151,24 @@ footer {
 #boton-jugar{
   --bg:rgb(238, 109, 109);
 } */
+
+
+#PistaOculta
+{
+  display: none;
+}
+
+.bordeYsombra
+{
+    border:1.5px solid black;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.main-nivel1
+{
+  color:white;
+  padding-bottom:50%;
+  background-image: url(/Imagenes/nivel1-foto-espejo.png);
+  background-size: cover;
+}

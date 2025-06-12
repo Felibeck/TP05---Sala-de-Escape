@@ -24,7 +24,7 @@ public class HomeController : Controller
         niveles.InicializarNivel1();
         HttpContext.Session.SetString("niveles", Objeto.ObjectToString(niveles));
         ViewBag.pista = niveles.pistas[0];
-        return View();
+        return View("Nivel1");
     }
 
 

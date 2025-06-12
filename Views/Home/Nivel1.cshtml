@@ -1,0 +1,30 @@
+<main class="main-nivel1">
+
+    <h2>¿Dónde está el Wi-Fi?</h2>
+
+
+    <div>
+        <h3>Historia breve:</h3>
+        <p>Te has quedado hasta tarde en clase de apoyo y necesitas subir tu TP final, pero la señal en el aula está caída. Para romper el silencio (y tu desesperación), alguien dejó un post-it junto al router.</p>
+    </div>
+
+
+    <a href="#" onclick="MostrarPista()"><p>Ver Pista</p></a>
+    <div id="PistaOculta"><p>@ViewBag.pista</p></div>
+
+
+    <h4>Respuesta:</h4>
+    <form action="Nivel1" method=POST>
+        <input type="password" name="rta">
+        <input type="submit">
+    </form>
+
+
+</main>
+
+<script>
+    function MostrarPista()
+    {
+        document.getElementById('PistaOculta').style.display='Block';
+    }
+</script>
