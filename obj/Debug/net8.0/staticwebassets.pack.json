@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\Imagenes\\campusOrt-Nivel2.png"
     },
     {
+      "Id": "C:\\Users\\49255481\\TP05---Sala-de-Escape\\wwwroot\\Imagenes\\compuPorAtras.png",
+      "PackagePath": "staticwebassets\\Imagenes\\compuPorAtras.png"
+    },
+    {
       "Id": "C:\\Users\\49255481\\TP05---Sala-de-Escape\\wwwroot\\Imagenes\\logoKeycaps.png",
       "PackagePath": "staticwebassets\\Imagenes\\logoKeycaps.png"
     },

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pQLm/adFq2KNKw2D65SUX7GrSdRPDlZrtydGTIzPh80=",
+  "Hash": "pifC7Fp3RwKBtpB9GMjHJ6yxICwZJAVvfju3BNSxQ2w=",
   "Source": "TP05-SalaDeEscape",
   "BasePath": "_content/TP05-SalaDeEscape",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Imagenes\\campusOrt-Nivel2.png"
+    },
+    {
+      "Identity": "C:\\Users\\49255481\\TP05---Sala-de-Escape\\wwwroot\\Imagenes\\compuPorAtras.png",
+      "SourceId": "TP05-SalaDeEscape",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\49255481\\TP05---Sala-de-Escape\\wwwroot\\",
+      "BasePath": "_content/TP05-SalaDeEscape",
+      "RelativePath": "Imagenes/compuPorAtras.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Imagenes\\compuPorAtras.png"
     },
     {
       "Identity": "C:\\Users\\49255481\\TP05---Sala-de-Escape\\wwwroot\\Imagenes\\logoKeycaps.png",

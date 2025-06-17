@@ -8,6 +8,65 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
 
+<style>
+    body {
+      font-family: sans-serif;
+      background-color: #f6f8fa;
+      padding: 2rem;
+    }
+    .repo-container {
+      background-color: white;
+      border: 1px solid #d0d7de;
+      border-radius: 6px;
+      padding: 16px;
+      max-width: 700px;
+      margin: auto;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .repo-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    .repo-header h2 {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    .repo-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .repo-list li {
+      display: flex;
+      align-items: center;
+      padding: 8px 0;
+      border-top: 1px solid #d0d7de;
+    }
+    .repo-list li:first-child {
+      border-top: none;
+    }
+    .repo-list input[type="checkbox"] {
+      margin-right: 12px;
+      transform: scale(1.2);
+    }
+    .folder {
+      font-weight: bold;
+      color: #0969da;
+    }
+    .file {
+      color: #57606a;
+    }
+    .message {
+      margin-left: auto;
+      font-size: 0.9rem;
+      color: #57606a;
+    }
+  </style>
+
+
 <body>
     <header>
         <a href='@Url.Action("Index", "Home")'><img src="~/Imagenes/logoKeycaps.png"></a>
