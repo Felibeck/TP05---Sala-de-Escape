@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TP05-SalaDeEscape")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2e5fc39301d6239e17821f3bd3df1d06528c76c6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+60c2bb4f02a8836b7204d71c28d80ae95bb465a4")]
 [assembly: System.Reflection.AssemblyProductAttribute("TP05-SalaDeEscape")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TP05-SalaDeEscape")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

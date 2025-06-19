@@ -4,9 +4,6 @@
   padding:0;
 }
 
-header{
-  border-bottom: 1px;
-}
 
 header h5{
   text-align: center;
@@ -160,11 +157,35 @@ footer {
 
 .bordeYsombra
 {
-    border:1.5px solid black;
-    border-radius: 15px;
-    box-shadow: 5px 5px 5px grey;
+    /* border:1.5px solid black; */
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px grey;
 }
 
+.main-tutorial div
+{
+  margin:4%;
+}
+
+.main-tutorial div:hover
+{
+  box-shadow: 5px 5px 20px black;
+}
+
+.main-tutorial div ul li, .main-tutorial div p
+{
+  padding:1%;
+} 
+
+.main-tutorial div h1
+{
+  /* text-align: center; */
+  padding:0.5%;
+}
+
+.main-tutorial div ul li{
+  list-style: none;
+}
 /* .main-nivel1
 {
   color:white;
@@ -184,3 +205,147 @@ map area{
   cursor:default;
 }
 
+.main-creditos img
+{
+  /* border-radius: 50%; */
+  width: 100%;
+  border:1px solid black;
+  border-radius: 15px;
+  /* filter:brightness(1.2); */
+  filter: saturate(10);
+ 
+}
+
+.main-creditos section article
+{
+  display: inline-block;
+  margin:5%;
+  border:1px solid black;
+  border-radius: 15px;
+  width: 23%;
+  height: auto;
+  background-color: black;
+}
+
+.main-creditos section article h3
+{
+  text-align: center;
+  padding:5%;
+  color:white;
+}
+
+.main-creditos h1
+{
+  text-align: center;
+  margin-top:5%;
+  font-size: 50px;
+  /* padding-top:2%; */
+  /* margin-top:4%; */
+}
+
+
+
+/* From Uiverse.io by Javierrocadev */ 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 5em;
+  font-weight: 900;
+  color: #e10600;
+  position: relative;
+  transition: all 1s ease;
+  text-align: center;
+}
+
+.container__star {
+  transition: all .7s ease-in-out;
+}
+
+.first {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  transition: all .7s ease-in-out;
+}
+
+.svg-icon {
+  position: absolute;
+  fill: #e94822;
+  z-index: 1;
+}
+
+.star-eight {
+  background: #efd510;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  text-align: center;
+  animation: rot 3s  infinite;
+}
+
+.star-eight::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 150px;
+  width: 150px;
+  background: #efd510;
+  transform: rotate(135deg);
+}
+
+.container:hover .container__star {
+  transform: rotateX(70deg) translateY(250px);
+  box-shadow: 0px 0px 120px -100px #000000;
+}
+
+.container:hover .svg-icon {
+  animation: grow 1s linear infinite;
+}
+
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(340deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes grow {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-5deg);
+  }
+
+  75% {
+    transform: rotate(5deg);
+  }
+
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.container
+{
+  padding:10%;
+}
+
+.main-ganar h1
+{
+  text-align: center;
+  padding:2%;
+  padding-top:3%;
+  font-size: 50px;
+}

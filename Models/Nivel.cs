@@ -33,14 +33,14 @@ public class Nivel
     {
         respuestas[2] = null;
         numNivel = 3;
-        pistas[2] = "Gracias a mi ves todo lo que ves...";
+        pistas[2] = "Yo doy el poder...";
     }
 
        public void InicializarNivel4()
     {
         respuestas[3] = "Fotos_Privadas.png,Contraseña_Gmail.txt,bestChatGPTPrompts.txt,troyano.bat,chatPrivado.txt";
         numNivel = 4;
-        pistas[3] = "maximo 5 solo capos only caps";
+        pistas[3] = "Maximo 5 solo capos only caps | Selecciona los archivos que el GIT IGNORaria.";
     }
 
        public void InicializarNivel5()
@@ -49,7 +49,6 @@ public class Nivel
         numNivel = 5;
         pistas[4] = "Como dijo Leo: MVC = Model, View, Controller.";
     }
-    //debe haber varios inicializarNivel y estos seran usados en cada action...
 
     public bool comprobarRespuesta(string respuesta, int nivel)
     {

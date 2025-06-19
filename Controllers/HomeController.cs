@@ -130,7 +130,7 @@ public IActionResult Nivel4()
     public IActionResult Nivel5()
     {
         Nivel niveles = Objeto.StringToObject<Nivel>(HttpContext.Session.GetString("niveles")) ;
-        niveles.InicializarNivel3();
+        niveles.InicializarNivel5();
         ViewBag.pista = niveles.pistas[4];
         return View();
     }

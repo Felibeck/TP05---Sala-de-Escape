@@ -9,8 +9,20 @@
       "PackagePath": "staticwebassets\\Imagenes\\campusOrt-Nivel2.png"
     },
     {
+      "Id": "C:\\Users\\49255481\\TP05---Sala-de-Escape\\wwwroot\\Imagenes\\canela.jfif",
+      "PackagePath": "staticwebassets\\Imagenes\\canela.jfif"
+    },
+    {
       "Id": "C:\\Users\\49255481\\TP05---Sala-de-Escape\\wwwroot\\Imagenes\\compuPorAtras.png",
       "PackagePath": "staticwebassets\\Imagenes\\compuPorAtras.png"
+    },
+    {
+      "Id": "C:\\Users\\49255481\\TP05---Sala-de-Escape\\wwwroot\\Imagenes\\felipe.jfif",
+      "PackagePath": "staticwebassets\\Imagenes\\felipe.jfif"
+    },
+    {
+      "Id": "C:\\Users\\49255481\\TP05---Sala-de-Escape\\wwwroot\\Imagenes\\ilan.jfif",
+      "PackagePath": "staticwebassets\\Imagenes\\ilan.jfif"
     },
     {
       "Id": "C:\\Users\\49255481\\TP05---Sala-de-Escape\\wwwroot\\Imagenes\\logoKeycaps.png",
