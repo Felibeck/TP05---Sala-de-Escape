@@ -23,48 +23,82 @@ public class HomeController : Controller
         Nivel niveles = new Nivel();
         niveles.InicializarNivel1();
         HttpContext.Session.SetString("niveles", Objeto.ObjectToString(niveles));
-        ViewBag.pista = niveles.pistas[0];
-        return View("Nivel1");
+        return RedirectToAction("Nivel1");
     }
-
-
+    public IActionResult Nivel1()
+    {
+        Nivel niveles = Objeto.StringToObject<Nivel>(HttpContext.Session.GetString("niveles")) ;
+        ViewBag.pista = niveles.pistas[0];
+        return View();
+    }
+    [HttpPost]
     public IActionResult Nivel1(string rta)
     {
         Nivel niveles = Objeto.StringToObject<Nivel>(HttpContext.Session.GetString("niveles")) ;
+        ViewBag.pista = niveles.pistas[0];
+
         if(niveles.comprobarRespuesta(rta, niveles.numNivel))
         {
             HttpContext.Session.SetString("niveles", Objeto.ObjectToString(niveles));
-            return View("Nivel2");
-        }else return View();
+            return RedirectToAction("Nivel2");
+        }else return View ();
     }
 
+
+ public IActionResult Nivel2()
+    {
+        Nivel niveles = Objeto.StringToObject<Nivel>(HttpContext.Session.GetString("niveles")) ;
+        niveles.InicializarNivel2();
+        ViewBag.pista = niveles.pistas[1];
+        return View();
+    }
+
+    [HttpPost]
     public IActionResult Nivel2(string rta)
     {
         Nivel niveles = Objeto.StringToObject<Nivel>(HttpContext.Session.GetString("niveles"));
-        niveles.InicializarNivel2();
         HttpContext.Session.SetString("niveles", Objeto.ObjectToString(niveles));
         ViewBag.pista = niveles.pistas[1];
-
+        niveles.InicializarNivel2();
         if(niveles.comprobarRespuesta(rta.ToUpper(), niveles.numNivel))
         {
             HttpContext.Session.SetString("niveles", Objeto.ObjectToString(niveles));
-            return View("Nivel3");
-        }else return View();
+            return RedirectToAction("Nivel3");
+        }else return View ();
     }
 
+
+    public IActionResult Nivel3()
+    {
+        Nivel niveles = Objeto.StringToObject<Nivel>(HttpContext.Session.GetString("niveles")) ;
+        niveles.InicializarNivel3();
+        ViewBag.pista = niveles.pistas[2];
+        return View();
+    }
+
+    [HttpPost]
      public IActionResult Nivel3(string rta)
     {
         Nivel niveles = Objeto.StringToObject<Nivel>(HttpContext.Session.GetString("niveles"));
-        niveles.InicializarNivel3();
         HttpContext.Session.SetString("niveles", Objeto.ObjectToString(niveles));
         ViewBag.pista = niveles.pistas[2];
-
+        niveles.InicializarNivel3();
         if(niveles.comprobarRespuesta(rta, niveles.numNivel))
         {
             HttpContext.Session.SetString("niveles", Objeto.ObjectToString(niveles));
-            return View("Nivel4");
+            return RedirectToAction("Nivel4");
         }else return View();
     }
+
+public IActionResult Nivel4()
+    {
+        Nivel niveles = Objeto.StringToObject<Nivel>(HttpContext.Session.GetString("niveles")) ;
+        niveles.InicializarNivel4();
+        ViewBag.pista = niveles.pistas[3];
+        return View();
+    }
+
+    [HttpPost]
 
          public IActionResult Nivel4(string[] rta)
     {
@@ -88,10 +122,20 @@ public class HomeController : Controller
         if(niveles.comprobarRespuesta(resp, niveles.numNivel))
         {
             HttpContext.Session.SetString("niveles", Objeto.ObjectToString(niveles));
-            return View("Nivel5");
-        }else return View();
+            return RedirectToAction("Nivel5");
+        }else return View("Nivel4");
     }
 
+
+    public IActionResult Nivel5()
+    {
+        Nivel niveles = Objeto.StringToObject<Nivel>(HttpContext.Session.GetString("niveles")) ;
+        niveles.InicializarNivel3();
+        ViewBag.pista = niveles.pistas[4];
+        return View();
+    }
+
+    [HttpPost]
      public IActionResult Nivel5(string rta)
     {
         Nivel niveles = Objeto.StringToObject<Nivel>(HttpContext.Session.GetString("niveles"));
@@ -102,7 +146,7 @@ public class HomeController : Controller
         if(niveles.comprobarRespuesta(rta, niveles.numNivel))
         {
             HttpContext.Session.SetString("niveles", Objeto.ObjectToString(niveles));
-            return View("Ganar");
+            return RedirectToAction("Ganar");
         }else return View();
     }
     public IActionResult Ganar()

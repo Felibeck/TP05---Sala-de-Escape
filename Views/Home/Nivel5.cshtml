@@ -1,3 +1,36 @@
-<main>
-    <h1>Hola</h1>
+<main class="main-nivel5">
+
+    <h2>Arrastra y suelta el flujo MVC</h2>
+
+
+    <div>
+        <h3>Enunciado:</h3>
+        <p> Estás a punto de entregar tu TP... pero el profe te dice: “No me lo des hasta que entiendas cómo viaja un dato en MVC.”
+ ¡Ordená el recorrido correcto!</p>
+    </div>
+
+
+    <a href="#" onclick="MostrarPista()"><p>Ver Pista</p></a>
+    <div id="PistaOculta"><p>@ViewBag.pista</p></div>
+
+        <ol>
+            <li>El Controlador pasa los datos a la Vista.</li>
+            <li>El controlador pide datos al Modelo.</li>
+            <li>El usuario hace clic en un botón del navegador.</li>
+            <li>El Modelo devuelve los datos.</li>
+            <li>La solicitud llega al Controlador.</li>
+            <li>La Vista muestra el resultado al usuario.</li>
+        </ol>
+
+        <form method="POST" action='@Url.Action("Home", "Nivel5")'>
+        <input type="password" maxlength="6">
+        <input type="submit">
+        </form>
 </main>
+
+<script>
+    function MostrarPista()
+    {
+        document.getElementById('PistaOculta').style.display='Block';
+    }
+</script>
