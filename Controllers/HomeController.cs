@@ -15,9 +15,9 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-
         return View();
     }
+
     public IActionResult Jugar()
     {
         Nivel niveles = new Nivel();
@@ -28,6 +28,10 @@ public class HomeController : Controller
     public IActionResult Nivel1()
     {
         Nivel niveles = Objeto.StringToObject<Nivel>(HttpContext.Session.GetString("niveles")) ;
+        if(niveles.numNivel != 1)
+        {
+            return View("Nivel"+niveles.numNivel);
+        }
         ViewBag.pista = niveles.pistas[0];
         return View();
     }
@@ -49,6 +53,10 @@ public class HomeController : Controller
     {
         Nivel niveles = Objeto.StringToObject<Nivel>(HttpContext.Session.GetString("niveles")) ;
         niveles.InicializarNivel2();
+        if(niveles.numNivel != 2)
+        {
+            return View("Nivel"+niveles.numNivel);
+        }
         ViewBag.pista = niveles.pistas[1];
         return View();
     }
@@ -72,6 +80,10 @@ public class HomeController : Controller
     {
         Nivel niveles = Objeto.StringToObject<Nivel>(HttpContext.Session.GetString("niveles")) ;
         niveles.InicializarNivel3();
+        if(niveles.numNivel != 3)
+        {
+            return View("Nivel"+niveles.numNivel);
+        }
         ViewBag.pista = niveles.pistas[2];
         return View();
     }
@@ -94,6 +106,10 @@ public IActionResult Nivel4()
     {
         Nivel niveles = Objeto.StringToObject<Nivel>(HttpContext.Session.GetString("niveles")) ;
         niveles.InicializarNivel4();
+        if(niveles.numNivel != 4)
+        {
+            return View("Nivel"+niveles.numNivel);
+        }
         ViewBag.pista = niveles.pistas[3];
         return View();
     }
@@ -131,6 +147,10 @@ public IActionResult Nivel4()
     {
         Nivel niveles = Objeto.StringToObject<Nivel>(HttpContext.Session.GetString("niveles")) ;
         niveles.InicializarNivel5();
+        if(niveles.numNivel != 5)
+        {
+            return View("Nivel"+niveles.numNivel);
+        }
         ViewBag.pista = niveles.pistas[4];
         return View();
     }

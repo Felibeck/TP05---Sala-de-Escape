@@ -3,14 +3,10 @@
     <h2>¡Computadora en apagón!</h2>
 
 
-    <div>
+    <div class="historiaBreveContenedor">
         <h3>Historia breve:</h3>
         <p> De pronto, tu compu se apaga en medio de la edición del TP. No hay corriente, no hay disco duro que aguante. ¿Qué cable o dispositivo debes reconectar para revivirla?</p>
     </div>
-
-
-    <a href="#" onclick="MostrarPista()"><p>Ver Pista</p></a>
-    <div id="PistaOculta"><p>@ViewBag.pista</p></div>
 
 
     <img src="/Imagenes/compuPorAtras.png"  usemap="#parteAtrasComputadora" alt="Parte atras gabinete"/>
@@ -21,6 +17,10 @@
 
     </map>
 
+    <div class="cajaPistas">
+    <a href="#" onclick="MostrarPista()" class="pista">Ver Pista</a>
+    <div id="PistaOculta"><p>@ViewBag.pista</p></div>
+    <div>
     
 
 

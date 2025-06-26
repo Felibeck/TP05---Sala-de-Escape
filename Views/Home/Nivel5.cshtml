@@ -1,19 +1,60 @@
+<style>
+  .ol-mvc {
+    counter-reset: paso;
+    list-style: none;
+    padding-left: 0;
+    max-width: 600px;
+    margin: 40px auto;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .ol-mvc li {
+    counter-increment: paso;
+    background: #eef1f6;
+    margin: 12px 0;
+    padding: 18px 20px;
+    border-radius: 8px;
+    position: relative;
+    color: #24292f;
+    font-size: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.04);
+  }
+
+  .ol-mvc li::before {
+    content: counter(paso);
+    position: absolute;
+    left: -35px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #0d6efd;
+    color: white;
+    font-weight: bold;
+    width: 26px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+</style>
+
 <main class="main-nivel5">
 
     <h2>Arrastra y suelta el flujo MVC</h2>
 
 
-    <div>
+    <div class="historiaBreveContenedor">
         <h3>Enunciado:</h3>
         <p> Estás a punto de entregar tu TP... pero el profe te dice: “No me lo des hasta que entiendas cómo viaja un dato en MVC.”
  ¡Ordená el recorrido correcto!</p>
+
+    
     </div>
 
 
-    <a href="#" onclick="MostrarPista()"><p>Ver Pista</p></a>
-    <div id="PistaOculta"><p>@ViewBag.pista</p></div>
 
-        <ol>
+        <ol class="ol-mvc">
             <li>El Controlador pasa los datos a la Vista.</li>
             <li>El controlador pide datos al Modelo.</li>
             <li>El usuario hace clic en un botón del navegador.</li>
@@ -23,9 +64,21 @@
         </ol>
 
         <form method="POST" action='@Url.Action("Nivel5", "Home")'>
-        <input type="password" name="rta" maxlength="6">
-        <input type="submit">
+    <div class="respuestasDiv">
+    <div class="input-container">
+        <input type="password" id="input" required="" name="rta">
+        <label for="input" class="label">Respuesta</label>
+        <div class="underline"></div>
+    </div>
+    <input type="submit" value="Enviar">
         </form>
+
+    </div>
+
+    <div class="cajaPistas">
+    <a href="#" onclick="MostrarPista()" class="pista">Ver Pista</a>
+    <div id="PistaOculta"><p>@ViewBag.pista</p></div>
+    <div>
 </main>
 
 <script>

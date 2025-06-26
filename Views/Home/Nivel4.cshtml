@@ -3,26 +3,24 @@
     <h2>¡GitHub explotando!</h2>
 
 
-    <div>
+    <div class="historiaBreveContenedor">
         <h3>Historia breve:</h3>
         <p> Revisas tu repositorio y descubres que has subido carpetas gigantes con binarios: ¡toda tu carpeta “node_modules”, “*.exe” y hasta tus secretos de Discord! El conserje del colegio amenaza con revisar tu GitHub si no enmiendas esto.</p>
     </div>
 
-
-    <a href="#" onclick="MostrarPista()"><p>Ver Pista</p></a>
-    <div id="PistaOculta"><p>@ViewBag.pista</p></div>
-
+<section>
     <div class="repo-container">
     <div class="repo-header">
       <h2>Ctrl + Alt + Escape!</h2>
       <span>¡TP Final!</span>S
     </div>
+
 <form action="Nivel4" method="POST">
   <ul class="repo-list">
     <li><input type="checkbox" name="rta" value=".vscode"><span class="folder">.vscode</span><span class="message">index.cshtml terminada y contenido de tutorial empezado</span></li>
     <li><input type="checkbox" name="rta" value="Controllers"><span class="folder">Controllers</span><span class="message">Nivel 1 y 2 terminados</span></li>
     <li><input type="checkbox" name="rta" value="Models"><span class="folder">Models</span><span class="message">Nivel 1 y 2 terminados</span></li>
-    <li><input type="checkbox" name="rta" value="Fotos_Privadas.png"><span class="folder">Fotos_Privadas.png</span><span class="message">index.cshtml terminada y contenido de tutorial empezado</span></li>
+    <li><input type="checkbox" name="rta" value="Fotos_Privadas.png"><span class="folder">Fotos_Privadas.png</span><span class="message">contenido de tutorial empezado</span></li>
     <li><input type="checkbox" name="rta" value="Properties"><span class="folder">Properties</span><span class="message">Primer Commit</span></li>
     <li><input type="checkbox" name="rta" value="Views"><span class="folder">Views</span><span class="message">Nivel 1 y 2 terminados</span></li>
     <li><input type="checkbox" name="rta" value="Contraseña_Gmail.txt"><span class="folder">Contraseña_Gmail.txt</span><span class="message">Nivel 1 y 2 terminados</span></li>
@@ -38,6 +36,12 @@
   <button class="submit-btn" type="submit">Enviar selección</button>
 </form>
   </div>
+  </section>
+
+    <div class="cajaPistas">
+    <a href="#" onclick="MostrarPista()" class="pista">Ver Pista</a>
+    <div id="PistaOculta"><p>@ViewBag.pista</p></div>
+    <div>
 
 </main>
 
