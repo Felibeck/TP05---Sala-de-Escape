@@ -52,11 +52,11 @@ public class HomeController : Controller
  public IActionResult Nivel2()
     {
         Nivel niveles = Objeto.StringToObject<Nivel>(HttpContext.Session.GetString("niveles")) ;
-        niveles.InicializarNivel2();
         if(niveles.numNivel != 2)
         {
             return View("Nivel"+niveles.numNivel);
         }
+        niveles.InicializarNivel2();
         ViewBag.pista = niveles.pistas[1];
         return View();
     }
@@ -79,11 +79,11 @@ public class HomeController : Controller
     public IActionResult Nivel3()
     {
         Nivel niveles = Objeto.StringToObject<Nivel>(HttpContext.Session.GetString("niveles")) ;
-        niveles.InicializarNivel3();
         if(niveles.numNivel != 3)
         {
             return View("Nivel"+niveles.numNivel);
         }
+        niveles.InicializarNivel3();
         ViewBag.pista = niveles.pistas[2];
         return View();
     }
@@ -102,14 +102,16 @@ public class HomeController : Controller
         }else return View();
     }
 
-public IActionResult Nivel4()
+public IActionResult Nivel4(string err ="")
     {
         Nivel niveles = Objeto.StringToObject<Nivel>(HttpContext.Session.GetString("niveles")) ;
-        niveles.InicializarNivel4();
+        if (err=="mfdfkghfdgkjfkjhgf") niveles.PaseDeSala();
         if(niveles.numNivel != 4)
         {
             return View("Nivel"+niveles.numNivel);
         }
+       
+        niveles.InicializarNivel4();
         ViewBag.pista = niveles.pistas[3];
         return View();
     }

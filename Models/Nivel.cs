@@ -25,28 +25,28 @@ public class Nivel
     public void InicializarNivel2()
     {
         respuestas[1] = "CERIANA";
-        numNivel = 2;
         pistas[1] = "4 palabras: Barba, Lentes, Mate y HTML";
     }
 
        public void InicializarNivel3()
     {
         respuestas[2] = null;
-        numNivel = 3;
         pistas[2] = "Yo doy el poder...";
     }
 
        public void InicializarNivel4()
     {
         respuestas[3] = "Fotos_Privadas.png,Contraseña_Gmail.txt,bestChatGPTPrompts.txt,troyano.bat,chatPrivado.txt";
-        numNivel = 4;
         pistas[3] = "Maximo 5 solo capos only caps | Selecciona los archivos que el GIT IGNORaria.";
     }
-
+       public void PaseDeSala()
+    {
+        numNivel++;
+    }
+    
        public void InicializarNivel5()
     {
         respuestas[4] = "531426";
-        numNivel = 5;
         pistas[4] = "Como dijo Leo: MVC = Model, View, Controller.";
     }
 
@@ -56,6 +56,8 @@ public class Nivel
         if(respuesta == respuestas[nivel-1])
         {
             aux = true;
+
+            numNivel++;
         }
         return aux;
     }
