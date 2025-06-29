@@ -110,7 +110,7 @@ public IActionResult Nivel4(string err ="")
         {
             return View("Nivel"+niveles.numNivel);
         }
-       
+        HttpContext.Session.SetString("niveles", Objeto.ObjectToString(niveles));
         niveles.InicializarNivel4();
         ViewBag.pista = niveles.pistas[3];
         return View();

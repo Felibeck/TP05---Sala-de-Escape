@@ -18,6 +18,8 @@ header img{
   margin-left:40.7%;
   margin-top:3%;
   margin-bottom:1%;
+  background-color: white;
+  border-radius: 20px;
 }
 
 
@@ -156,7 +158,11 @@ footer {
   text-align: center;
   padding:2% 0%;
   font-size: 20px;
-  
+}
+#PistaOculta p
+{
+  padding-top: 4%;
+  margin-left: 5%;
 }
 
 .bordeYsombra
@@ -416,7 +422,7 @@ h2
 
 .respuestasDiv
 {
-    /* margin-left:43%; */
+    margin-left:40%;
     padding-top:3%;
 }
 
@@ -493,13 +499,13 @@ input[type="submit"]:active
   box-shadow: 1px 1px 1px gray;
 }
 
-.respuestasDiv
-{
-  margin-left:43%;
-}
-
 .cajaPistas
 {
+  padding-bottom: 5%;
+}
+
+.soloPistas{
+  padding-top: 5%;
   padding-bottom: 5%;
 }
 
@@ -519,7 +525,10 @@ input[type="submit"]:active
   margin-bottom:3%;
   box-shadow: 5px 5px 20px grey;
   display:inline-block;
-  margin-left:34%;
+}
+
+#repoGithub{
+  margin-left: 34.5%;
 }
 
 body{
@@ -535,9 +544,21 @@ body{
 .contenedoresRtas
 {
   background-color: white;
-  width: 25%;
-  margin-left: 35%;
+  height: auto;
+  width: 50%;
+  margin-left: 25%;
   justify-content: center;
+  margin-top:1%;
+}
+
+#contenedorRta3
+{
+  background-color: white;
+  height: auto;
+  width: 40%;
+  margin-left: 29.5%;
+  justify-content: center;
+  margin-top:1%;
 }
 
 .index-main
