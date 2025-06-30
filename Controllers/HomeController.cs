@@ -41,7 +41,7 @@ public class HomeController : Controller
         Nivel niveles = Objeto.StringToObject<Nivel>(HttpContext.Session.GetString("niveles")) ;
         ViewBag.pista = niveles.pistas[0];
 
-        if(niveles.comprobarRespuesta(rta, niveles.numNivel))
+        if(niveles.comprobarRespuesta(rta.ToUpper(), niveles.numNivel))
         {
             HttpContext.Session.SetString("niveles", Objeto.ObjectToString(niveles));
             return RedirectToAction("Nivel2");

@@ -16,9 +16,9 @@ public class Nivel
     }
     public void InicializarNivel1()
     {
-        respuestas[0] = "erbilorgamla";
+        respuestas[0] = "ERBILORGAMLA";
         numNivel = 1;
-        pistas[0] = "Piensa al reves de como lo sueles hacer...";
+        pistas[0] = "Piensa al REVES de como lo sueles hacer...";
         
     }
 
@@ -46,7 +46,7 @@ public class Nivel
     
        public void InicializarNivel5()
     {
-        respuestas[4] = "531426";
+        respuestas[4] = "352416";
         pistas[4] = "Como dijo Leo: MVC = Model, View, Controller.";
     }
 
