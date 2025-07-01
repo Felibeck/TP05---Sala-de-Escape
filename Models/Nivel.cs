@@ -9,6 +9,7 @@ public class Nivel
 
     [JsonProperty]
     public string[] pistas {get; private set;}
+    
     public Nivel()
     {
         this.respuestas = new string[5];

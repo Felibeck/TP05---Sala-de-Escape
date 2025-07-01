@@ -17,7 +17,6 @@
     <div class="input-container">
         <input type="password" id="input" required="" name="rta">
         <label for="input" class="label">Respuesta</label>
-        <div class="underline"></div>
     </div>
     <input type="submit" value="Enviar">
 
@@ -35,42 +34,6 @@
 
 </main>
 
-
-<div class="contador" id="contador">10:00</div>
-
-<style>
-  .contador {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 10px 16px;
-    border-radius: 8px;
-    font-size: 1.2rem;
-    font-family: monospace;
-    z-index: 1000;
-  }
-</style>
-
-<script>
-  let tiempoRestante = @ViewBag.timer; // 10 minutos
-  const contador = document.getElementById('contador');
-
-  const intervalo = setInterval(() => {
-    const minutos = Math.floor(tiempoRestante / 60);
-    const segundos = tiempoRestante % 60;
-    contador.textContent = `${minutos.toString().padStart(2, '0')}:${segundos.toString().padStart(2, '0')}`;
-
-    if (tiempoRestante <= 0) {
-      clearInterval(intervalo);
-      contador.textContent = "¡Tiempo terminado!";
-      contador.style.backgroundColor = "#dc3545"; // rojo
-    }
-
-    tiempoRestante--;
-  }, 1000);
-</script>
 <script>
     function MostrarPista()
     {

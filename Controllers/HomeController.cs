@@ -23,16 +23,36 @@ public class HomeController : Controller
         Nivel niveles = new Nivel();
         niveles.InicializarNivel1();
         HttpContext.Session.SetString("niveles", Objeto.ObjectToString(niveles));
+        if (string.IsNullOrEmpty(HttpContext.Session.GetString("TiempoInicio")))
+        {
+            HttpContext.Session.SetString("TiempoInicio", DateTime.Now.ToString("o")); // "o" formato ISO 8601
+        }
         return RedirectToAction("Nivel1");
     }
     public IActionResult Nivel1()
     {
+
         Nivel niveles = Objeto.StringToObject<Nivel>(HttpContext.Session.GetString("niveles")) ;
         if(niveles.numNivel != 1)
         {
             return View("Nivel"+niveles.numNivel);
         }
         ViewBag.pista = niveles.pistas[0];
+
+        int tiempoTotalSegundos = 10 * 60;
+string tiempoInicioStr = HttpContext.Session.GetString("TiempoInicio");
+
+DateTime tiempoInicio = DateTime.Parse(tiempoInicioStr, null, System.Globalization.DateTimeStyles.RoundtripKind);
+TimeSpan transcurrido = DateTime.Now - tiempoInicio;
+int segundosRestantes = tiempoTotalSegundos - (int)transcurrido.TotalSeconds;
+
+if (segundosRestantes <= 0)
+{
+    return RedirectToAction("Perder", "Home");
+}
+
+ViewBag.SegundosRestantes = segundosRestantes;
+        
         return View();
     }
     [HttpPost]
@@ -40,7 +60,6 @@ public class HomeController : Controller
     {
         Nivel niveles = Objeto.StringToObject<Nivel>(HttpContext.Session.GetString("niveles")) ;
         ViewBag.pista = niveles.pistas[0];
-
         if(niveles.comprobarRespuesta(rta.ToUpper(), niveles.numNivel))
         {
             HttpContext.Session.SetString("niveles", Objeto.ObjectToString(niveles));
@@ -58,6 +77,27 @@ public class HomeController : Controller
         }
         niveles.InicializarNivel2();
         ViewBag.pista = niveles.pistas[1];
+
+        int tiempoTotalSegundos = 10 * 60;
+string tiempoInicioStr = HttpContext.Session.GetString("TiempoInicio");
+
+if (string.IsNullOrEmpty(tiempoInicioStr))
+{
+    // Si no hay tiempo, puedes redirigir a inicio, por ejemplo
+    return RedirectToAction("Index", "Home");
+}
+
+DateTime tiempoInicio = DateTime.Parse(tiempoInicioStr, null, System.Globalization.DateTimeStyles.RoundtripKind);
+TimeSpan transcurrido = DateTime.Now - tiempoInicio;
+int segundosRestantes = tiempoTotalSegundos - (int)transcurrido.TotalSeconds;
+
+if (segundosRestantes <= 0)
+{
+    return RedirectToAction("Perder", "Home");
+}
+
+ViewBag.SegundosRestantes = segundosRestantes;
+
         return View();
     }
 
@@ -85,6 +125,25 @@ public class HomeController : Controller
         }
         niveles.InicializarNivel3();
         ViewBag.pista = niveles.pistas[2];
+        int tiempoTotalSegundos = 10 * 60;
+string tiempoInicioStr = HttpContext.Session.GetString("TiempoInicio");
+
+if (string.IsNullOrEmpty(tiempoInicioStr))
+{
+    // Si no hay tiempo, puedes redirigir a inicio, por ejemplo
+    return RedirectToAction("Index", "Home");
+}
+
+DateTime tiempoInicio = DateTime.Parse(tiempoInicioStr, null, System.Globalization.DateTimeStyles.RoundtripKind);
+TimeSpan transcurrido = DateTime.Now - tiempoInicio;
+int segundosRestantes = tiempoTotalSegundos - (int)transcurrido.TotalSeconds;
+
+if (segundosRestantes <= 0)
+{
+    return RedirectToAction("Perder", "Home");
+}
+
+ViewBag.SegundosRestantes = segundosRestantes;
         return View();
     }
 
@@ -113,6 +172,25 @@ public IActionResult Nivel4(string err ="")
         HttpContext.Session.SetString("niveles", Objeto.ObjectToString(niveles));
         niveles.InicializarNivel4();
         ViewBag.pista = niveles.pistas[3];
+        int tiempoTotalSegundos = 10 * 60;
+string tiempoInicioStr = HttpContext.Session.GetString("TiempoInicio");
+
+if (string.IsNullOrEmpty(tiempoInicioStr))
+{
+    // Si no hay tiempo, puedes redirigir a inicio, por ejemplo
+    return RedirectToAction("Index", "Home");
+}
+
+DateTime tiempoInicio = DateTime.Parse(tiempoInicioStr, null, System.Globalization.DateTimeStyles.RoundtripKind);
+TimeSpan transcurrido = DateTime.Now - tiempoInicio;
+int segundosRestantes = tiempoTotalSegundos - (int)transcurrido.TotalSeconds;
+
+if (segundosRestantes <= 0)
+{
+    return RedirectToAction("Perder", "Home");
+}
+
+ViewBag.SegundosRestantes = segundosRestantes;
         return View();
     }
 
@@ -154,6 +232,26 @@ public IActionResult Nivel4(string err ="")
             return View("Nivel"+niveles.numNivel);
         }
         ViewBag.pista = niveles.pistas[4];
+        int tiempoTotalSegundos = 10 * 60;
+string tiempoInicioStr = HttpContext.Session.GetString("TiempoInicio");
+
+if (string.IsNullOrEmpty(tiempoInicioStr))
+{
+    // Si no hay tiempo, puedes redirigir a inicio, por ejemplo
+    return RedirectToAction("Index", "Home");
+}
+
+DateTime tiempoInicio = DateTime.Parse(tiempoInicioStr, null, System.Globalization.DateTimeStyles.RoundtripKind);
+TimeSpan transcurrido = DateTime.Now - tiempoInicio;
+int segundosRestantes = tiempoTotalSegundos - (int)transcurrido.TotalSeconds;
+
+if (segundosRestantes <= 0)
+{
+    return RedirectToAction("Perder", "Home");
+}
+
+ViewBag.SegundosRestantes = segundosRestantes;
+
         return View();
     }
 
@@ -181,6 +279,11 @@ public IActionResult Nivel4(string err ="")
         return View();
     }
     public IActionResult Creditos()
+    {
+        return View();
+    }
+
+    public IActionResult Perder()
     {
         return View();
     }

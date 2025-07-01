@@ -80,11 +80,35 @@
     <footer>
         &copy; @DateTime.Now.Year - Ctrl + Alt + Escape
     </footer>
-
+<!-- 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+    @await RenderSectionAsync("Scripts", required: false) -->
 
+    @if (ViewBag.SegundosRestantes != null)
+{
+    <div id="timer" style="font-size: 2em; color: red; position: fixed; top: 10px; right: 20px; z-index: 9999;">
+        Tiempo restante: <span id="time"></span>
+    </div>
+    <script>
+        var segundos = @(ViewBag.SegundosRestantes ?? 0);
+
+        function updateTimer() {
+            if (segundos <= 0) {
+                window.location.href = '@Url.Action("Perder", "Home")';
+                return;
+            }
+            var min = Math.floor(segundos / 60);
+            var seg = segundos % 60;
+            document.getElementById('time').textContent =
+                (min < 10 ? '0' : '') + min + ':' + (seg < 10 ? '0' : '') + seg;
+            segundos--;
+        }
+
+        setInterval(updateTimer, 1000);
+        updateTimer();
+    </script>
+}
 
 </body>
 
