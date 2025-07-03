@@ -1196,24 +1196,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\49255481\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Feli\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\49255481\\TP05---Sala-de-Escape\\TP05-SalaDeEscape.csproj",
+      "projectUniqueName": "C:\\Users\\Feli\\Desktop\\TP05---Sala-de-Escape\\TP05-SalaDeEscape.csproj",
       "projectName": "TP05-SalaDeEscape",
-      "projectPath": "C:\\Users\\49255481\\TP05---Sala-de-Escape\\TP05-SalaDeEscape.csproj",
-      "packagesPath": "C:\\Users\\49255481\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\49255481\\TP05---Sala-de-Escape\\obj\\",
+      "projectPath": "C:\\Users\\Feli\\Desktop\\TP05---Sala-de-Escape\\TP05-SalaDeEscape.csproj",
+      "packagesPath": "C:\\Users\\Feli\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Feli\\Desktop\\TP05---Sala-de-Escape\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\49255481\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Feli\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1272,7 +1267,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.408/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

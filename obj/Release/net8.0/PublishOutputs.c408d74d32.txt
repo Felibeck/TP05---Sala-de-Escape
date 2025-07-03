@@ -1,0 +1,16 @@
+C:\Users\Feli\Desktop\TP05---Sala-de-Escape\bin\Release\net8.0\publish\TP05-SalaDeEscape.exe
+C:\Users\Feli\Desktop\TP05---Sala-de-Escape\bin\Release\net8.0\publish\appsettings.Development.json
+C:\Users\Feli\Desktop\TP05---Sala-de-Escape\bin\Release\net8.0\publish\appsettings.json
+C:\Users\Feli\Desktop\TP05---Sala-de-Escape\bin\Release\net8.0\publish\TP05-SalaDeEscape.dll
+C:\Users\Feli\Desktop\TP05---Sala-de-Escape\bin\Release\net8.0\publish\TP05-SalaDeEscape.deps.json
+C:\Users\Feli\Desktop\TP05---Sala-de-Escape\bin\Release\net8.0\publish\TP05-SalaDeEscape.runtimeconfig.json
+C:\Users\Feli\Desktop\TP05---Sala-de-Escape\bin\Release\net8.0\publish\TP05-SalaDeEscape.pdb
+C:\Users\Feli\Desktop\TP05---Sala-de-Escape\bin\Release\net8.0\publish\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Feli\Desktop\TP05---Sala-de-Escape\bin\Release\net8.0\publish\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\Feli\Desktop\TP05---Sala-de-Escape\bin\Release\net8.0\publish\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\Feli\Desktop\TP05---Sala-de-Escape\bin\Release\net8.0\publish\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Feli\Desktop\TP05---Sala-de-Escape\bin\Release\net8.0\publish\Microsoft.Extensions.Options.dll
+C:\Users\Feli\Desktop\TP05---Sala-de-Escape\bin\Release\net8.0\publish\Newtonsoft.Json.dll
+C:\Users\Feli\Desktop\TP05---Sala-de-Escape\bin\Release\net8.0\publish\System.Security.Cryptography.Pkcs.dll
+C:\Users\Feli\Desktop\TP05---Sala-de-Escape\bin\Release\net8.0\publish\System.Security.Cryptography.Xml.dll
+C:\Users\Feli\Desktop\TP05---Sala-de-Escape\bin\Release\net8.0\publish\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
